@@ -31,6 +31,21 @@ This tool computes a rolling mean of intensity data, determines noise thresholds
 
 ---
 
+## ⚙️ Installation
+
+### Requirements
+- Python 3.9+
+- Pipenv
+
+
+```bash
+git clone https://github.com/jj136975/NetCDF-Tools.git
+cd NetCDF-Tools
+pipenv install
+```
+
+---
+
 ## 🚀 Usage
 
 ```bash
