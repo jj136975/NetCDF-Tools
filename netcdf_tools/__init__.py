@@ -1,0 +1,1 @@
+from .netcdf_split import netcdf_split as split
