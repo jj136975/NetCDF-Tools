@@ -172,7 +172,7 @@ def netcdf_split(input_file_path: str | PathLike, output_dir_path: str | PathLik
         zip_file.writestr(output_filename, data)
         print(f"Exported range {i + 1}: scans {start_idx} to {end_idx} to {output_filename}")
 
-    show(output_file.joinpath("plot_intensity.png"), nc, cross_idx_ranges, rollmean, noise_lim)
+    show(output_file.joinpath("intensity_plot.png"), nc, cross_idx_ranges, rollmean, noise_lim)
 
     # Close NetCDF file
     nc.close()

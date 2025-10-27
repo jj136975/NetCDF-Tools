@@ -34,10 +34,24 @@ This tool computes a rolling mean of intensity data, determines noise thresholds
 ## 🚀 Usage
 
 ```bash
-python "NetCDF Split/main.py" \
+cd simple_netcdf_split
+python main.py \
   -i input/MethnolExtractant.cdf \
   -o output \
   -s 50 \
   -m max \
   -f 2.0 \
   -n 15
+```
+## Example
+- **Input File**: `input/MethnolExtractant.cdf`
+- **Output Directory**: `output`
+- **Rolling Mean Window Size**: `50`
+- **Noise Method**: `max`
+- **Factor**: `2.0`
+- **Noise Seconds**: `15`
+- **Generated Files**:
+  - `output/split_ranges.zip`: Contains segmented NetCDF files.
+  - `output/intensity_plot.png`: Plot of intensity with detected ranges.
+
+[![Intensity Plot](examples/simple_netcdf_split/output/intensity_plot.png)](examples/simple_netcdf_split/output/intensity_plot.png)
