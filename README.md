@@ -34,7 +34,7 @@ This tool computes a rolling mean of intensity data, determines noise thresholds
 ## 🚀 Usage
 
 ```bash
-python 8ce898fc-5691-4587-afd6-22b132987eeb.py \
+python "NetCDF Split/main.py" \
   -i input/MethnolExtractant.cdf \
   -o output \
   -s 50 \
